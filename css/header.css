@@ -1,0 +1,42 @@
+:root {
+    --red: #cf0a2c;
+}
+
+.top__header {
+    background-color: var(--red);
+    height: 32px;
+}
+
+.top__header__menu {
+    width: 80%;
+    height: inherit;
+    justify-content: flex-end;
+}
+
+.main__header {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.navbar {
+    width: 80%;
+}
+
+.logo {
+    object-fit: contain;
+    height: 50px;
+}
+
+.navigation {
+    flex: 1;
+    padding-top: 3em;
+}
+
+.navbar__item {
+    padding-bottom: 3em;
+}
+
+
+.navbar__subMenu {
+    display: none;
+}
