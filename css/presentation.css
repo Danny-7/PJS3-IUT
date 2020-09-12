@@ -1,0 +1,103 @@
+:root {
+    --red: #cf0a2c;
+    --grey: #666;
+    --yellow: #eaa903;
+}
+
+.presentation {
+    background-image: url("../assets/fd-opaque.png");
+    background-color: var(--yellow);
+}
+
+.left-item {
+    flex: 0.5;
+    padding-top: 2%;
+    padding-right: 8%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+}
+
+.txt-upper>h1 {
+    font-size: 60px;
+    line-height: 1.3em;
+}
+
+.left-item p {
+    font-size: 20px;
+}
+
+.btn__section {
+    cursor: pointer;
+    position: relative;
+    padding: 0.3em 1em;
+    border: 2px solid;
+    border-radius: 3px;
+    width: fit-content;
+    line-height: 1.7em;
+    transition: all 0.2s;
+}
+
+.btn__section>a span {
+    display: none;
+}
+
+.btn__section:hover {
+    padding: 0.3em 2em 0.3em 0.7em;
+}
+
+.btn__section:hover>a span {
+    margin-left: 1em;
+    display: flex;
+}
+
+.btn__light {
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.right-item {
+    flex: 0.5;
+    background-image: url("../assets/iut_accueil.jpg");
+}
+
+@media (max-width: 1000px) {
+
+    .presentation {
+        background: #fff;
+    }
+
+    .left-item {
+        flex: 1;
+    }
+
+    .left-item h1 {
+        font-weight: 900;
+        font-size: 30px;
+        color: #555555;
+    }
+
+    .left-item p {
+        font-size: 14px;
+        color: #666666;
+    }
+
+    .right-item {
+        display: none;
+    }
+
+    .btn__section {
+        color: var(--red);
+        border-color: var(--red);
+        border-radius: 3px;
+    }
+
+    .btn__section:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        border-color: transparent;
+    }
+}
