@@ -1,0 +1,15 @@
+.news > h1 {
+    width: fit-content;
+    margin: 1em auto;
+}
+
+.card {
+    width: 550px;
+    background-color: tomato;
+    border: 1px solid grey;
+}
+
+.cards__container {
+    margin: 0 auto;
+    width: 60%;
+}
