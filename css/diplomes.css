@@ -1,0 +1,48 @@
+.diplomes {
+    background-color: #eaa903;
+}
+
+.diplomes>h1{
+    color: white;
+    padding: 1em;
+    font-size: 36px;
+}
+
+.diplomes>.grid{
+    color : white;
+    text-align: center;
+    width : 80%;
+    margin : 0 auto;
+    grid-gap: 3em;
+}
+
+.grid>div{
+    max-width: 550px;
+}
+
+.grid i {
+    font-size: 70px;
+    padding: 10px;
+}
+
+.grid h1 {
+    padding: 10px;
+}
+
+@media (max-width : 1000px){
+    .diplomes .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .diplomes {
+        background-color: unset;
+    }
+
+    .diplomes :not(i){
+        color : #666;
+    }
+
+    .grid i {
+        color : #cf0a2c;
+    }
+}

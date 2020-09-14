@@ -162,3 +162,8 @@ a:visited {
     margin-left: 1em;
     display: flex;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
