@@ -6,6 +6,7 @@
 .candidatures>div>div>h1 {
     color : #747d88;
     font-size : 36px;
+    font-weight: 500;
 }
 
 .candidatures_title{
