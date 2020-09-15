@@ -5,11 +5,16 @@
 
 .card {
     width: 550px;
-    background-color: tomato;
-    border: 1px solid grey;
+  
+    border: 1px solid transparent;
+    margin-right: 30px;
+    border-color: #666;
+    
 }
 
 .cards__container {
     margin: 0 auto;
     width: 60%;
+   
+ 
 }
