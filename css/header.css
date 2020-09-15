@@ -33,6 +33,7 @@
 .main__header {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  height: 120px;
 }
 
 .navbar {
@@ -51,14 +52,21 @@
 
 .navigation {
   flex: 0.9;
+  background-color: none;
+}
+
+.mobile__navigation {
+  display: none;
   background-color: inherit;
+
 }
 
 .navbar__item__children {
   cursor: pointer;
 }
 
-.navigation>li>a:hover {
+.navigation>li>a:hover,
+.mobile__navigation>li>a:hover {
   opacity: 0.7;
   transition: 0.4s all ease-in-out;
 }
@@ -71,7 +79,8 @@
   display: block;
 }
 
-.navigation>.navbar__item {
+.navigation>.navbar__item,
+.mobile__navigation>.navbar__item {
   transition: 0.4s all ease-in-out;
 }
 
@@ -106,9 +115,19 @@
 
 .searchBar {
   display: none;
+  flex: 0.8;
+  justify-items: flex-end;
+  height: inherit;
 }
 
-.searchBar .show {
+.searchBar>input,
+.searchBar>input:focus {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.show {
   display: flex;
 }
 
@@ -138,7 +157,7 @@
 
 @media (max-width: 1300px) {
   .main__header {
-    height: unset;
+    height: 80px !important;
   }
 
   .top__header {
@@ -159,9 +178,14 @@
 
   .navigation {
     display: none;
+  }
+
+  .mobile__navigation {
+    display: none;
     flex-direction: column;
     position: absolute;
     z-index: 9999;
+    top: inherit;
     left: 0;
     width: 100%;
     max-width: unset;
@@ -219,7 +243,7 @@
     background-color: rgba(0, 0, 0, 0.03);
   }
 
-  .navigation.active {
+  .mobile__navigation.active {
     display: flex;
   }
 
