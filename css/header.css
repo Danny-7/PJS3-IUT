@@ -141,6 +141,10 @@
     height: unset;
   }
 
+  .top__header {
+    display: none;
+  }
+
   .mobile__menu__bar {
     display: block;
   }

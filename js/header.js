@@ -21,6 +21,17 @@ searchBtn.addEventListener('click', () => {
     navigationBar.setAttribute('style', 'display: none');
 });
 
+const addTopLinks = () => {
+    const url = "Étudiants";
+    const li = document.createElement('li');
+    li.classList.add('navbar__item');
+    const a = document.createElement('a');
+    a.href = "#";
+    a.textContent = `${url}`
+
+
+}
+
 const scrollFunction = () => {
     if (window.innerWidth > 1300) {
         if (window.pageYOffset > 0) {
