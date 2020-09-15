@@ -14,6 +14,7 @@
     width : 80%;
     margin : 0 auto;
     grid-gap: 3em;
+    align-content: center;
 }
 
 .grid>div{
@@ -22,16 +23,21 @@
 
 .grid i {
     font-size: 70px;
-    padding: 10px;
+    padding: 20px;
 }
 
-.grid h1 {
+.grid p {
     padding: 10px;
+    line-height: 2em;
 }
 
 @media (max-width : 1000px){
     .diplomes .grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid>div {
+        max-width: 1000px;
     }
 
     .diplomes {
@@ -44,5 +50,15 @@
 
     .grid i {
         color : #cf0a2c;
+    }
+
+    .grid p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width : 500px){
+    .diplomes .grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
