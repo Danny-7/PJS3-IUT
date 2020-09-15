@@ -129,6 +129,42 @@ a:visited {
     margin-top: 20px;
 }
 
-.font-bold {
-    font-weight: bold;
+.btn__light {
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.btn__section {
+    cursor: pointer;
+    position: relative;
+    padding: 0.3em 1em;
+    border: 2px solid;
+    border-radius: 3px;
+    width: fit-content;
+    line-height: 1.7em;
+    transition: all 0.2s;
+}
+
+.btn__section>a span {
+    display: none;
+}
+
+.btn__section:hover {
+    padding: 0.3em 2em 0.3em 0.7em;
+}
+
+.btn__section:hover>a span {
+    margin-left: 1em;
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
