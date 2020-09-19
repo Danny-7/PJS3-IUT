@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <div class="page__container container">
+    <div class="container">
         <div class="header container">
             <div class="top__header container">
                 <div class="top__header__menu flex jcc">
@@ -331,10 +331,10 @@
             </section>
             <section class="container candidatures">
                 <div>
-                    <div class="candidatures_title">
+                    <div class="candidatures__title">
                         <h1 class="txt-center">Candidatures 2020-2021</h1>
                     </div>
-                    <div class="candidatures_text txt-center">
+                    <div class="candidatures__text txt-center">
                         <h3>Les calendriers de candidature pour les DUT, Licences Professionnelles, Licences 3, Master,
                             Passerelle DEASS et DU sont en ligne !</h3>
                     </div>
@@ -386,7 +386,7 @@
             </section>
             <section class="container news">
                 <h1>Actualités</h1>
-                <div class="flex jc-sbc cards__container">
+                <div class="flex jc-sbc wrap cards__container">
                     <div class="card">
                         <h1>Rentrée 2020: inscriptions et dates à retenir </h1>
                         <p><a href="#">IUT</a></p>
@@ -413,7 +413,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section container clg-light">
+            <div class="section container clg-light">
                 <h1>L'IUT de Paris en chiffres</h1>
                 <div class="counters">
                     <div>
@@ -437,45 +437,44 @@
                         <h5>Personnels administratifs et techniques</h5>
                     </div>
                 </div>
-            </section>
+            </div>
+            <footer class="container ">
+                <div class="footer flex wrap jc-sbc">
+                    <div class="footer__widget">
+                        <h4 class="title pb-1"> IUT de Paris</h4>
+                        <ul class="pb-1">
+                            <li class="txt-bold">Site Mirabeau</li>
+                            <li>143 avenue de versailles</li>
+                            <li>75016 Paris</li>
+                            <li>Tél. : +33 1 76 53 47 00</li>
+                            <li>Fax : +33 1 45 25 70 75</li>
+                        </ul>
+                        <ul>
+                            <li class="txt-bold">Site Pajol</li>
+                            <li>20 rue du Département</li>
+                            <li>75018 Paris</li>
+                        </ul>
+                    </div>
+                    <div class="footer__widget">
+                        <h4 class="title pb-1">Accès directs</h4>
+                        <ul class="pb-1">
+                            <li>Acccès et contacts</li>
+                            <li>Le projet de l'IUT</li>
+                            <li>Mentions légales</li>
+                        </ul>
+                    </div>
+                    <div class="footer__widget">
+                        <a href="#">
+                            <img src="https://www.iut.parisdescartes.fr/wp-content/uploads/sites/3/2019/07/logo-universite-paris-300x88-300x88.png"
+                                alt="Logo IUT de Paris">
+                        </a>
+                    </div>
+                </div>
+            </footer>
 
         </div>
     </div>
-    <footer class="container ">
-        <div class="footer flex jc-sbc">
-                <div class="footer__widget">
-                    <h4 class="title pb-1"> IUT de Paris</h4>
-                    <ul class="pb-1">
-                        <li class="txt-bold">Site Mirabeau</li>
-                        <li>143 avenue de versailles</li>
-                        <li>75016 Paris</li>
-                        <li>Tél. : +33 1 76 53 47 00</li>
-                        <li>Fax   : +33 1 45 25 70 75</li>
-                    </ul>
-                    <ul>
-                        <li class="txt-bold">Site Pajol</li>
-                        <li>20 rue du Département</li>
-                        <li>75018 Paris</li> 
-                    </ul>
-                </div>
-                <div class="footer__widget">
-                    <h4 class="title pb-1">Accès directs</h4>
-                    <ul class="pb-1">
-                        <li>Acccès et contacts</li>
-                        <li>Le projet de l'IUT</li>
-                        <li>Mentions légales</li>
-                    </ul>
-                </div>
-                <div class="footer__widget">
-                    <a href="#">
-                        <img src="https://www.iut.parisdescartes.fr/wp-content/uploads/sites/3/2019/07/logo-universite-paris-300x88-300x88.png" alt="Logo IUT de Paris">
-                    </a>
-                </div>
-            </div>
-            
-        </div>
-               
-    </footer>
+
 </body>
 
 </html>

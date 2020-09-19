@@ -1,25 +1,31 @@
+:root {
+    --red: #cf0a2c;
+    --grey: #666;
+    --yellow: #eaa903;
+}
+
 .candidatures>div {
-    margin : 2em auto;
+    margin: 2em auto;
     width: 80%;
 }
 
 .candidatures>div>div>h1 {
-    color : #747d88;
-    font-size : 36px;
+    color: #747d88;
+    font-size: 36px;
     font-weight: 500;
 }
 
-.candidatures_title{
-    margin : 2em auto;
+.candidatures__title {
+    margin: 2em auto;
 }
 
-.candidatures_text{
-    color : #555;
+.candidatures__text {
+    color: #555;
     font-size: 22px;
 }
 
 .candidatures_btn {
-    color : #eaa903;
-    border-color : #eaa903;
-    margin : 1.5em auto;
+    color: var(--yellow);
+    border-color: var(--yellow);
+    margin: 1.5em auto;
 }

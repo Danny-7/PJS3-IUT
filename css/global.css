@@ -154,7 +154,6 @@ a:visited {
     position: relative;
     padding: 0.3em 1em;
     border: 2px solid;
-    border-radius: 3px;
     width: fit-content;
     line-height: 1.7em;
     transition: all 0.2s;
@@ -165,7 +164,7 @@ a:visited {
 }
 
 .btn__section:hover {
-    padding: 0.3em 2em 0.3em 0.7em;
+    padding: 0.3em 0.7em;
 }
 
 .btn__section:hover>a span {

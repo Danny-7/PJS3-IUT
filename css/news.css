@@ -1,20 +1,22 @@
-.news > h1 {
+:root {
+    --grey: #666;
+}
+
+.news>h1 {
     width: fit-content;
     margin: 1em auto;
 }
 
 .card {
     width: 550px;
-  
+
     border: 1px solid transparent;
     margin-right: 30px;
-    border-color: #666;
-    
+    border-color: var(--grey);
+
 }
 
 .cards__container {
     margin: 0 auto;
     width: 60%;
-   
- 
 }
