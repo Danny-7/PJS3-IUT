@@ -116,6 +116,10 @@ a:visited {
     font-weight: 700;
 }
 
+.txt-bold {
+    font-weight: bold;
+}
+
 .txt-center {
     text-align: center;
 }
