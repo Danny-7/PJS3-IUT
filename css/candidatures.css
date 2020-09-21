@@ -4,6 +4,11 @@
     --yellow: #eaa903;
 }
 
+.candidatures {
+    padding: 4em 0;
+    /* property added for animations tes */
+}
+
 .candidatures>div {
     margin: 2em auto;
     width: 80%;
