@@ -3,12 +3,21 @@
     margin: 1em auto;
 }
 
+.text > h2 {
+    width: fit-content;
+    margin: 1em auto;
+    border-left: 5px solid #cf0a2c;
+    padding-left: 12px;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
 .card {
     width: 550px;
   
     border: 1px solid transparent;
     margin-right: 30px;
-    border-color: #666;
+    border-color: rgb(177, 176, 176);
     
 }
 
@@ -18,3 +27,18 @@
    
  
 }
+
+.card>img{
+    width: 100%;
+}
+
+.card>.text{
+    margin: 12px;
+
+}
+.text:not(h1){
+    font-size: 14px;
+    line-height: 1.7em;
+    font-weight: 500;
+}
+
