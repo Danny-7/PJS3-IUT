@@ -8,25 +8,28 @@
     margin: 1em auto;
     border-left: 5px solid #cf0a2c;
     padding-left: 12px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.5em;
+    color: #555555;
+}
+.cards__container {
+    margin: 0 auto;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1080px;
 }
 
 .card {
-    width: 550px;
-  
     border: 1px solid transparent;
     margin-right: 30px;
     border-color: rgb(177, 176, 176);
-    
 }
 
-.cards__container {
-    margin: 0 auto;
-    width: 60%;
-   
- 
+.card  *{
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 .card>img{
     width: 100%;
@@ -34,6 +37,7 @@
 
 .card>.text{
     margin: 12px;
+    color: #666666;
 
 }
 .text:not(h1){
