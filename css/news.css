@@ -1,6 +1,8 @@
 .news > h1 {
     width: fit-content;
     margin: 1em auto;
+    color: #747D88;
+    font-size: 36px;
 }
 
 .text > h2 {
