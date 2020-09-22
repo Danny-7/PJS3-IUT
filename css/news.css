@@ -48,3 +48,10 @@
     font-weight: 500;
 }
 
+.news_btn{
+    border-color:#eaa903;
+    color: #eaa903;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
