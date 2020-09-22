@@ -20,12 +20,17 @@
     align-items: flex-start;
     width: 80%;
     max-width: 1080px;
+    
+   
 }
 
 .card {
     border: 1px solid transparent;
-    margin-right: 30px;
     border-color: rgb(177, 176, 176);
+}
+
+.card:not(:last-child){
+    margin-right: 30px;
 }
 
 .card  *{
