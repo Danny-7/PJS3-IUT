@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
 
 * {
     margin: 0;
@@ -148,7 +148,6 @@ a:visited {
     text-transform: uppercase;
 }
 
-
 .btn__section {
     cursor: pointer;
     position: relative;
@@ -156,15 +155,16 @@ a:visited {
     border: 2px solid;
     width: fit-content;
     line-height: 1.7em;
-    transition: all 0.2s;
+    transition: all 300ms ease 0ms;
+}
+
+.btn__section:hover {
+    padding: 0.3em 1em 0.3em 0.7em;
 }
 
 .btn__section>a span {
     display: none;
-}
-
-.btn__section:hover {
-    padding: 0.3em 0.7em;
+    transition: all 300ms ease 0ms;
 }
 
 .btn__section:hover>a span {
@@ -175,4 +175,12 @@ a:visited {
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.txt-lh8 {
+    line-height: 1.8em;
 }
