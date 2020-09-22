@@ -5,7 +5,8 @@
 }
 
 .diplomes {
-    background-color: var(--yellow);
+    background-color: #eaa903;
+    padding: 2em;
 }
 
 .diplomes>h1 {
