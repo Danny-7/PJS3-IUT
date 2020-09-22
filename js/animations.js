@@ -1,6 +1,6 @@
 const degrees = document.querySelectorAll(".degree");
-const degreeTitle = document.querySelector(".diplomes > h1");
-const candBtn = document.querySelector(".candidatures_btn");
+const degreeTitle = document.querySelector(".degrees > h1");
+const candBtn = document.querySelector(".candidatures__btn");
 
 const appearOptions = {
     threshold: 1

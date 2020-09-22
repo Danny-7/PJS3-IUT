@@ -4,28 +4,29 @@
     --yellow: #eaa903;
 }
 
-.diplomes {
+.degrees {
     background-color: #eaa903;
-    padding: 2em;
+    padding: 60px 2em;
 }
 
-.diplomes>h1 {
+.degrees>h1 {
     color: white;
-    padding: 1em;
+    padding: 27px;
     font-size: 36px;
 }
 
-.diplomes>.grid {
+.degrees>.grid {
     color: white;
     text-align: center;
     width: 80%;
+    padding: 25px 0;
     margin: 0 auto;
     grid-gap: 3em;
     align-content: center;
 }
 
 .grid>div {
-    max-width: 550px;
+    width: 90%;
 }
 
 .grid i {
@@ -33,7 +34,12 @@
     padding: 20px;
 }
 
+.grid h4 {
+    font-size: 22px;
+}
+
 .grid p {
+    font-size: 16px;
     padding: 10px;
     line-height: 2em;
 }
@@ -50,19 +56,20 @@
 }
 
 @media (max-width : 1000px) {
-    .diplomes .grid {
+    .degrees .grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .grid>div {
+        width: 100%;
         max-width: 1000px;
     }
 
-    .diplomes {
+    .degrees {
         background-color: unset;
     }
 
-    .diplomes :not(i) {
+    .degrees :not(i) {
         color: var(--grey);
     }
 
@@ -76,7 +83,7 @@
 }
 
 @media (max-width : 500px) {
-    .diplomes .grid {
+    .degrees .grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
