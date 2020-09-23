@@ -1,9 +1,13 @@
 :root {
-    --grey: #666;
+    --red: #cf0a2c;
+    --yellow: #eaa903;
 }
 
 .news {
-    padding: 100px 0;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1080px;
+    padding-bottom: 67px;
 }
 
 .news>h1 {
@@ -13,29 +17,21 @@
     font-size: 36px;
 }
 
-.text>h2 {
-    width: fit-content;
-    margin: 1em auto;
-    border-left: 5px solid #cf0a2c;
-    padding-left: 12px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.5em;
-    color: #555555;
-}
 
 .cards__container {
-    margin: 0 auto;
     align-items: flex-start;
-    width: 80%;
-    max-width: 1080px;
+    margin-bottom: 2.75%;
 }
 
+
 .card {
-    border: 1px solid transparent;
-    margin-right: 30px;
-    border-color: rgb(177, 176, 176);
-    width: 29.667%;
+    border: 1px solid #d8d8d8;
+    width: 100%;
+}
+
+.card:not(:last-child) {
+    margin-right: 55px;
+    margin-bottom: 30px;
 }
 
 .card * {
@@ -43,14 +39,26 @@
 }
 
 
-.card>img {
+.card img {
     width: 100%;
 }
 
-.card>.text {
-    margin: 12px;
+.card .text {
+    margin: 19px;
     color: #666666;
+}
 
+
+.text h2 {
+    width: fit-content;
+    border-left: 5px solid var(--red);
+    padding-left: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    margin-right: 10px;
+    color: #555555;
 }
 
 .text:not(h1) {
@@ -59,8 +67,51 @@
     font-weight: 500;
 }
 
-@media (max-width: 1080px) {
+.news__btn {
+    border-color: var(--yellow);
+    color: var(--yellow);
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* Breakpoint pour un écran inférieur ou égale à 1080px*/
+@media(max-width:1080px) {
+    .cards__container {
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+    }
+
     .card {
-        width: 47.25%;
+        width: 47%;
+    }
+
+    .card:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .card:last-child {
+        position: relative;
+        top: -175px;
+    }
+
+}
+
+/* Breakpoint pour un écran inférieur ou égale à 768px*/
+
+@media(max-width: 768px) {
+    .cards__container {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+
+    }
+
+    .card:last-child {
+        position: unset;
+        top: 0;
     }
 }
