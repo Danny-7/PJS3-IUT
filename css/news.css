@@ -75,6 +75,15 @@
     margin-top: 50px;
 }
 
+.fade-in-op {
+    opacity: 0;
+    transition: all 750ms ease-in;
+}
+
+.fade-in-op.appear {
+    opacity: 1;
+}
+
 /* Breakpoint pour un écran inférieur ou égale à 1080px*/
 @media(max-width:1080px) {
     .cards__container {

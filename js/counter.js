@@ -1,15 +1,24 @@
 const counterTitle = document.querySelector('.counter__section > h1');
 const counters = document.querySelector('.counters');
+const countersNum = document.querySelectorAll('.count');
 const countersDiv = document.querySelectorAll('.count__card');
+
+import {
+    CountUp
+} from './countUp.js'
+
+const counterOptions = {
+    useEasing: false,
+    useGrouping: false,
+    separator: '',
+    decimal: '',
+};
 
 // function to start counter up
 const launchCounter = () => {
-    $('.count').counterUp({
-        delay: 10,
-        time: 1000
-    });
-    $('.count').addClass('animated fadeInDownBig');
-    $('h3').addClass('animated fadeIn')
+    countersNum.forEach(counter =>
+        new CountUp(counter, counter.textContent, counterOptions)
+        .start());
 };
 
 // trigger which launch launchCounter function when is intersecting 

@@ -15,10 +15,7 @@
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/footer.css">
     <script async src="./js/header.js"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script async src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
-    <script async src="./js/counter.js"></script>
+    <script async src="./js/counter.js" type="module"></script>
     <script async src="./js/animations.js"></script>
     <title>IUT de Paris</title>
 </head>
@@ -169,7 +166,7 @@
                     <ul class="mobile__navigation flex jc-sbc">
                         <li class="navbar__item navbar__item__children pb-3">
                             <a href="#">L'institut <span><i class="fas fa-angle-down"></i></span></a>
-                            <ul class="navbar__subMenu">
+                            <ul class="navbar__subMenu__mobile">
                                 <li class="navbar__item">
                                     <a href="#">Notre projet</a>
                                 </li>
@@ -189,7 +186,7 @@
                         </li>
                         <li class="navbar__item navbar__item__children pb-3">
                             <a href="#">Nos formations <span><i class="fas fa-angle-down"></i></span></a>
-                            <ul class="navbar__subMenu">
+                            <ul class="navbar__subMenu__mobile">
                                 <li class="navbar__item">
                                     <a href="#">Commerce et marketing</a>
                                 </li>
@@ -212,7 +209,7 @@
                         </li>
                         <li class="navbar__item navbar__item__children pb-3">
                             <a href="#">Entreprises et FTLV <span><i class="fas fa-angle-down"></i></span></a>
-                            <ul class="navbar__subMenu">
+                            <ul class="navbar__subMenu__mobile">
                                 <li class="navbar__item">
                                     <a href="#">L'apprentissage</a>
                                 </li>
@@ -232,7 +229,7 @@
                         </li>
                         <li class="navbar__item navbar__item__children pb-3">
                             <a href="#">International <span><i class="fas fa-angle-down"></i></span></a>
-                            <ul class="navbar__subMenu">
+                            <ul class="navbar__subMenu__mobile">
                                 <li class="navbar__item">
                                     <a href="#">Welcome to the IUT of Paris </a>
                                 </li>
@@ -249,7 +246,7 @@
                         </li>
                         <li class="navbar__item navbar__item__children pb-3">
                             <a href="#">Vie à l'IUT <span><i class="fas fa-angle-down"></i></span></a>
-                            <ul class="navbar__subMenu">
+                            <ul class="navbar__subMenu__mobile">
                                 <li class="navbar__item">
                                     <a href="#">Plateau technique</a>
                                 </li>
@@ -390,7 +387,7 @@
             </section>
             <!--News section-->
             <section class="container">
-                <div class="news">
+                <div class="news fade-in-op">
                     <h1>Actualités</h1>
                     <div class="flex jc-sbc cards__container">
                         <div class="card">
