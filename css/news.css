@@ -1,3 +1,10 @@
+.news{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+
 .news > h1 {
     width: fit-content;
     margin: 1em auto;
@@ -5,32 +12,30 @@
     font-size: 36px;
 }
 
-.text > h2 {
-    width: fit-content;
-    margin: 1em auto;
-    border-left: 5px solid #cf0a2c;
-    padding-left: 12px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.5em;
-    color: #555555;
-}
+
+
 .cards__container {
-    margin: 0 auto;
     align-items: flex-start;
-    width: 80%;
-    max-width: 1080px;
+  
     
-   
+    
+    
+    
 }
+  
 
 .card {
     border: 1px solid transparent;
-    border-color: rgb(177, 176, 176);
+    border-color: rgba(102, 102, 102, 0.3);
+    width: 100%;
+    
+
+    
 }
 
 .card:not(:last-child){
-    margin-right: 30px;
+    margin-right: 55px;
+    margin-bottom: 30px;
 }
 
 .card  *{
@@ -40,13 +45,31 @@
 
 .card>img{
     width: 100%;
+  
+   
 }
 
 .card>.text{
-    margin: 12px;
+    
+    margin: 19px;
     color: #666666;
 
 }
+
+
+.text > h2 {
+    width: fit-content;
+    
+    border-left: 5px solid #cf0a2c;
+    padding-left: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    margin-right: 10px;
+    color: #555555;
+}
+
 .text:not(h1){
     font-size: 14px;
     line-height: 1.7em;
@@ -60,3 +83,44 @@
     margin: auto;
     margin-top: 50px;
 }
+
+
+
+
+
+@media( max-width:1080px){ 
+    .cards__container {
+       
+      flex-wrap: wrap;
+       width: 100%;
+       max-width: 100%;
+       
+    }
+    .card{
+        width: 47%;
+    }
+    .card:not(:last-child){
+        margin-right: 0;
+    }
+    .card:last-child{
+        position: relative;
+        top: -175px;
+    }
+    
+}
+
+@media(max-width: 768px){
+    .cards__container{
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+        
+    }
+    .card:last-child{
+        position: unset;
+        top: 0;
+    }
+}
+    
