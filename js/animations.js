@@ -5,6 +5,7 @@ const candBtn = document.querySelector(".candidatures__btn");
 const degrees = document.querySelectorAll(".degree");
 const degreeTitle = document.querySelector(".degrees > h1");
 const newsContainer = document.querySelector(".news");
+const newsBtn = document.querySelector(".news__btn");
 
 const appearOptions = {
     threshold: 1
@@ -43,3 +44,4 @@ degrees.forEach(degree => appearOnScroll.observe(degree));
 appearOnScroll.observe(degreeTitle);
 appearOnScroll.observe(candBtn);
 appearOnScrollNews.observe(newsContainer);
+appearOnScrollNews.observe(newsBtn);
