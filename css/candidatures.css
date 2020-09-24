@@ -46,3 +46,14 @@
     opacity: 1;
     transform: scale(1);
 }
+
+.fade-in-two {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 750ms ease-in;
+}
+
+.fade-in-two.show-fade {
+    opacity: 1;
+    transform: translateY(0);
+}

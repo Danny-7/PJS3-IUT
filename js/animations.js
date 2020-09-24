@@ -1,3 +1,6 @@
+const presentationContainer = document.querySelector(".presentation");
+const presentationDiv = document.querySelectorAll(".left-item > div");
+const candTitle = document.querySelector(".candidatures__title p");
 const candBtn = document.querySelector(".candidatures__btn");
 const degrees = document.querySelectorAll(".degree");
 const degreeTitle = document.querySelector(".degrees > h1");
@@ -7,13 +10,13 @@ const appearOptions = {
     threshold: 1
 };
 
-const display = (options) => {
+const display = (options, addedClass) => {
     return new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
                 return;
             } else {
-                entry.target.classList.add('appear');
+                entry.target.classList.add(addedClass);
                 observer.unobserve(entry.target);
             }
         });
@@ -22,11 +25,19 @@ const display = (options) => {
 
 
 
-const appearOnScroll = display(appearOptions);
+const appearOnScroll = display(appearOptions, 'appear');
 const appearOnScrollNews = display({
     threshold: 0.2
-})
+}, 'appear');
 
+const displayPresentation = display({
+    threshold: 0
+}, 'show-fade');
+
+displayPresentation.observe(presentationContainer);
+presentationDiv.forEach(div => displayPresentation.observe(div));
+
+displayPresentation.observe(candTitle);
 // degree section 
 degrees.forEach(degree => appearOnScroll.observe(degree));
 appearOnScroll.observe(degreeTitle);

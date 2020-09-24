@@ -29,16 +29,16 @@
     width: 90%;
 }
 
-.grid i {
+.degree i {
     font-size: 70px;
     padding: 20px;
 }
 
-.grid h4 {
+.degree h4 {
     font-size: 22px;
 }
 
-.grid p {
+.degree p {
     font-size: 16px;
     padding: 10px;
     line-height: 2em;
@@ -60,11 +60,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .grid>div {
-        width: 100%;
-        max-width: 1000px;
-    }
-
     .degrees {
         background-color: unset;
     }
@@ -73,12 +68,21 @@
         color: var(--grey);
     }
 
-    .grid i {
+    .degree {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .degree i {
         color: var(--red);
     }
 
-    .grid p {
-        font-size: 20px;
+    .degree h1 {
+        font-size: 18px;
+    }
+
+    .degree p {
+        font-size: 14px;
     }
 }
 

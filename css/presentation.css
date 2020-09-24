@@ -29,6 +29,26 @@
     background-image: url("../assets/iut_accueil.jpg");
 }
 
+.fade-in-one {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+.fade-appear {
+    opacity: 0;
+    transition: all 700ms ease-in;
+}
+
+.fade-appear.show-fade {
+    opacity: 1;
+}
+
+.fade-in-one.show-fade {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 @media (max-width: 1000px) {
 
     .presentation {
