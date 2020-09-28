@@ -1,0 +1,58 @@
+:root {
+    --red: #cf0a2c;
+}
+
+footer {
+    background-color: var(--red);
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer {
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 65px 0;
+    align-items: flex-start;
+}
+
+.footer__widget {
+    width: 30%;
+    line-height: 1.7em;
+}
+
+.footer__widget>h4 {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+@media (max-width: 937px) {
+    .footer {
+        padding: 8% 0;
+    }
+
+    .footer__widget:nth-child(1) {
+        width: 45%;
+        margin: 0 7.5% 7.5% 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 10% 0;
+    }
+
+    .footer__widget {
+        width: 100%;
+    }
+    
+    /*all widgets but not the last child */
+    .footer__widget:not(:last-child) {
+        margin: 0;
+        margin-bottom: 9.5%;
+    }
+
+    .footer img {
+        max-width: 100%;
+    }
+}

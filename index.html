@@ -1,16 +1,514 @@
+<!--
+    Author: Daniel Aguiar, Mehdi Hachisman, Raphaël Gonçalves Catarino,
+            Vincent Nguyen, Enzo Peudepièce
+    Year: 2020
+    Subject: PJS3 Project
+-->
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="iut.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--style sheets-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/iut.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/presentation.css" />
+    <link rel="stylesheet" href="./css/candidatures.css" />
+    <link rel="stylesheet" href="./css/diplomes.css" />
+    <link rel="stylesheet" href="./css/numbers.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!--javascript scripts-->
+    <script async src="./js/header.js"></script>
+    <script async src="./js/counter.js" type="module"></script>
+    <script async src="./js/animations.js"></script>
     <title>IUT de Paris</title>
 </head>
 
 <body>
+    <!--main page-->
+    <div class="container">
+        <!--header-->
+        <div class="header container">
+            <!--top header-->
+            <div class="top__header container">
+                <div class="top__header__menu flex jcc">
+                    <ul class="social__icons flex">
+                        <li class="social__icon">
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="social__icon">
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="social__icon">
+                            <a href="#" target="_blank" rel="noopener noreferrer"><span>Étudiants</span></a>
+                        </li>
+                        <li class="social__icon">
+                            <a href="#" target="_blank" rel="noopener noreferrer"><span>Personnels</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--navigation bar-->
+            <header class="main__header container">
+                <nav class="navbar container flex jc-sac">
+                    <div class="logo__container">
+                        <a href="./index.html">
+                            <img src="./assets/logo_iut-paris-descartes.png" alt="IUT de Paris" class="logo" />
+                        </a>
+                    </div>
+                    <!---unorder list for navigation bar links-->
+                    <ul class="navigation flex jc-sbc pt-3">
+                        <li class="navbar__item navbar__item__children pb-3">
+                            <a href="#">L'institut <span><i class="fas fa-angle-down"></i></span></a>
+                            <ul class="navbar__subMenu">
+                                <li class="navbar__item">
+                                    <a href="#">Notre projet</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Départements d'enseignement</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Organigramme</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Travailler à l'IUT</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Accès et contact</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item navbar__item__children pb-3">
+                            <a href="#">Nos formations <span><i class="fas fa-angle-down"></i></span></a>
+                            <ul class="navbar__subMenu">
+                                <li class="navbar__item">
+                                    <a href="#">Commerce et marketing</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Gestion et audit</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Information et communication</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Informatique</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Métiers du social et du socioculturel</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Métiers de la Data</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item navbar__item__children pb-3">
+                            <a href="#">Entreprises et FTLV <span><i class="fas fa-angle-down"></i></span></a>
+                            <ul class="navbar__subMenu">
+                                <li class="navbar__item">
+                                    <a href="#">L'apprentissage</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">La FTLV</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Projets et stages</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Taxe d'apprentissage</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Le Starter</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item navbar__item__children pb-3">
+                            <a href="#">International <span><i class="fas fa-angle-down"></i></span></a>
+                            <ul class="navbar__subMenu">
+                                <li class="navbar__item">
+                                    <a href="#">Welcome to the IUT of Paris </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Studying in Paris</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Course offer</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Partir à l'étranger</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item navbar__item__children pb-3">
+                            <a href="#">Vie à l'IUT <span><i class="fas fa-angle-down"></i></span></a>
+                            <ul class="navbar__subMenu">
+                                <li class="navbar__item">
+                                    <a href="#">Plateau technique</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Bibliothèque</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Restauration</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Le jardin partagé</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Vie Etudiante à l'IUT</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Année de césure</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Accessibilité et handicap</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Service social</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item pb-3">
+                            <a href="#" class="btn btn__nav">Covid-19</a>
+                        </li>
+                    </ul>
+                    <!--mobile navigation bar-->
+                    <ul class="mobile__navigation flex jc-sbc">
+                        <li class="navbar__item navbar__item__children pb-3">
+                            <a href="#">L'institut <span><i class="fas fa-angle-down"></i></span></a>
+                            <ul class="navbar__subMenu__mobile">
+                                <li class="navbar__item">
+                                    <a href="#">Notre projet</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Départements d'enseignement</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Organigramme</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Travailler à l'IUT</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Accès et contact</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item navbar__item__children pb-3">
+                            <a href="#">Nos formations <span><i class="fas fa-angle-down"></i></span></a>
+                            <ul class="navbar__subMenu__mobile">
+                                <li class="navbar__item">
+                                    <a href="#">Commerce et marketing</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Gestion et audit</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Information et communication</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Informatique</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Métiers du social et du socioculturel</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Métiers de la Data</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item navbar__item__children pb-3">
+                            <a href="#">Entreprises et FTLV <span><i class="fas fa-angle-down"></i></span></a>
+                            <ul class="navbar__subMenu__mobile">
+                                <li class="navbar__item">
+                                    <a href="#">L'apprentissage</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">La FTLV</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Projets et stages</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Taxe d'apprentissage</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Le Starter</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item navbar__item__children pb-3">
+                            <a href="#">International <span><i class="fas fa-angle-down"></i></span></a>
+                            <ul class="navbar__subMenu__mobile">
+                                <li class="navbar__item">
+                                    <a href="#">Welcome to the IUT of Paris </a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Studying in Paris</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Course offer</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Partir à l'étranger</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item navbar__item__children pb-3">
+                            <a href="#">Vie à l'IUT <span><i class="fas fa-angle-down"></i></span></a>
+                            <ul class="navbar__subMenu__mobile">
+                                <li class="navbar__item">
+                                    <a href="#">Plateau technique</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Bibliothèque</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Restauration</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Le jardin partagé</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Vie Etudiante à l'IUT</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Année de césure</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Accessibilité et handicap</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#">Service social</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item font-bold">
+                            <a href="#">Covid-19</a>
+                        </li>
+                        <li class="navbar__item font-bold">
+                            <a href="#">Etudiants</a>
+                        </li>
+                        <li class="navbar__item font-bold">
+                            <a href="#">Personnels</a>
+                        </li>
+                    </ul>
+                    <!--search bar feature-->
+                    <div class="searchBar">
+                        <input type="text" value="Rechercher ...">
+                    </div>
+                    <div class="nav__search flex">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="mobile__menu__bar">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="main__content">
+            <!--Jumbotron section -->
+            <section class="container">
+                <div class="presentation background flex fade-appear">
+                    <div class="left-item">
+                        <div class="txt-upper txt-h1-bolder txt-0 fade-appear">
+                            <h1>Rentrée 2020</h1>
+                        </div>
+                        <div class="txt-left txt-grey txt-0 txt-lh8 fade-in-one">
+                            <p>Futur.e étudiant.e de l’IUT de Paris ? Consultez les modalités d’inscription
+                                administrative et les plannings de rentrée</p>
+                        </div>
+                        <div class="btn__section btn__light txt-center fade-appear">
+                            <a class="flex jcc" href="#">Plus d'informations <span><i
+                                        class="fas fa-chevron-right"></i></span></a>
+                        </div>
+                        <div class="txt-left txt-grey txt-2 txt-lh8 fade-in-one">
+                            <p>Guide de survie, plan d’orientation, trésor de ressources, le livret de l’étudiant de
+                                l’IUT vous dira tout ce dont vous avez besoin pour utiliser au mieux les équipements et
+                                les services.</p>
+                        </div>
+                        <div class="btn__section btn__light txt-center fade-appear">
+                            <a class="flex jcc" href="#">Livret étudiant de L'IUT <span><i
+                                        class="fas fa-chevron-right"></i></span></a>
+                        </div>
+                        <div class="btn__section btn__light txt-center btn-2 fade-appear">
+                            <a class="flex jcc" href="#">Covid-19 <span><i class="fas fa-chevron-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="right-item background"></div>
+                </div>
+            </section>
+            <!--Candidatures section-->
+            <section class="container candidatures">
+                <div>
+                    <div class="candidatures__title">
+                        <p class="txt-center txt-h1-bolder fade-in-two">Candidatures 2020-2021</p>
+                    </div>
+                    <div class="candidatures__text">
+                        <h3 class="txt-h1-bolder">Les calendriers de candidature pour les DUT, Licences
+                            Professionnelles, Licences 3, Master,
+                            Passerelle DEASS et DU sont en ligne !</h3>
+                    </div>
+                    <div>
+                        <div class="btn__section btn__light txt-center btn-2 candidatures__btn fade-in">
+                            <a class="flex jcc" href="#">Plus d'informations <span><i
+                                        class="fas fa-chevron-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Degrees section-->
+            <section class="container degrees">
+                <h1 class="txt-center fade-in">Diplômes</h1>
+                <div class="grid">
+                    <div class="degree fade-in">
+                        <a href="#">
+                            <i class="fas fa-file-alt"></i>
+                            <h4>DUT</h4>
+                            <p>L’IUT délivre un diplôme national de niveau bac+2, le DUT, très reconnu dans le monde
+                                socio-professionnel</p>
+                        </a>
+                    </div>
+                    <div class="degree fade-in">
+                        <a href="#">
+                            <i class="fas fa-address-book"></i>
+                            <h4>Licenses Professionnelles</h4>
+                            <p>La licence professionnelle, accessible aux étudiants ayant validé 2 années d’études
+                                supérieures, permet de se spécialiser et d’obtenir un niveau d’études bac+3.</p>
+                        </a>
+                    </div>
+                    <div class="degree fade-in">
+                        <a href="#">
+                            <i class="fas fa-book"></i>
+                            <h4>DU</h4>
+                            <p>L’IUT délivre des Diplômes d’Université (DU) dans de nombreux domaines de formation afin
+                                de former notamment les adultes en reprise d’études</p>
+                        </a>
+                    </div>
+                    <div class="degree fade-in">
+                        <a href="#">
+                            <i class="fas fa-clipboard-list"></i>
+                            <h4>Licences 3 et Master</h4>
+                            <p>L’IUT de Paris c’est aussi des licences 3 et un Master en partenariat avec d’autres UFR
+                                d’Université de Paris.</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--News section-->
+            <section class="container">
+                <div class="news fade-in-op">
+                    <h1>Actualités</h1>
+                    <div class="flex jc-sbc cards__container">
+                        <div class="card">
+                            <div class="text">
+                                <h2>Rentrée 2020: inscriptions et dates à retenir </h2>
+                                <p><a href="#">IUT</a></p>
+                                <p>Inscriptions administratives Les inscriptions administratives à l'IUT de Paris auront
+                                    lieu du 15 juillet au 24 juillet 2020 pour les DUT, Licences professionnelles et
+                                    Licences 3 en formation initiale, et à compter du 24 août 2020 pour toutes les
+                                    autres...</p>
+                                <p style="color:#cf0a2c"><a href="#">lire plus</a></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/image actu.jpg"></img>
+                            <div class="text">
+                                <h2>Réouverture de la bibliothèque de l’IUT ! </h2>
+                                <p><a href="#">IUT</a></p>
+                                <p> La bibliothèque de l'IUT a rouvert ses portes au public le lundi 7 septembre 2020,
+                                    aux horaires habituels de 9h à 19h du lundi au vendredi. Néanmoins, étant donné le
+                                    contexte actuel, des mesures spécifiques ont été mises en place pour la réouverture
+                                    : 41 places...</p>
+                                <p style="color:#cf0a2c"><a href="#">lire plus</a></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="text">
+                                <h2>Examens 2020 : les dates à retenir</h2>
+                                <p><a href="#">IUT</a></p>
+                                <p>Voici les dates d'examens à retenir pour l'année 2020 de la filière CCA : Ces dates
+                                    sont connues par les étudiant.e.s depuis le 6 mai L3 CCA formation initiale Droit
+                                    des sociétés, enseignant.e : CHAMBOREDON Date : 2 juin Horaire : 9h30 - 11h30
+                                    Contrôle long Droit du...</p>
+                                <p style="color:#cf0a2c"><a href="#">lire plus</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn__section btn__light txt-center btn-2 news__btn fade-in">
+                        <a class="flex jcc" href="#">Toutes les actualités <span><i
+                                    class="fas fa-chevron-right"></i></span></a>
+                    </div>
+                </div>
+            </section>
+            <!--Counter section-->
+            <section class="container section">
+                <div class=" clg-light counter__section">
+                    <h1 class="fade-in">L'IUT de Paris en chiffres</h1>
+                    <div class="counters">
+                        <div class="count__card fade-in">
+                            <span class="count">3000</span>
+                            <h3>Étudiants</h3>
+                        </div>
+                        <div class="count__card fade-in">
+                            <span class="count">1100</span>
+                            <h3>Apprentis et stagiaires de formation continue</h3>
+                        </div>
+                        <div class="count__card fade-in">
+                            <span class="count">170</span>
+                            <h3>Enseignants et enseignants-chercheurs</h3>
+                        </div>
+                        <div class="count__card fade-in">
+                            <span class="count">750</span>
+                            <h3>Intervenants professionnels</h3>
+                        </div>
+                        <div class="count__card fade-in">
+                            <span class="count">84</span>
+                            <h3>Personnels administratifs et techniques</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Footer section-->
+            <footer class="container">
+                <div class="footer flex wrap jc-sbc">
+                    <div class="footer__widget">
+                        <h4 class="title pb-1"> IUT de Paris</h4>
+                        <ul class="pb-1">
+                            <li class="txt-bold">Site Mirabeau</li>
+                            <li>143 avenue de versailles</li>
+                            <li>75016 Paris</li>
+                            <li>Tél. : +33 1 76 53 47 00</li>
+                            <li>Fax : +33 1 45 25 70 75</li>
+                        </ul>
+                        <ul>
+                            <li class="txt-bold">Site Pajol</li>
+                            <li>20 rue du Département</li>
+                            <li>75018 Paris</li>
+                        </ul>
+                    </div>
+                    <div class="footer__widget">
+                        <h4 class="title pb-1">Accès directs</h4>
+                        <ul class="pb-1">
+                            <li><a href="#">Acccès et contacts</a></li>
+                            <li><a href="#">Le projet de l'IUT</a></li>
+                            <li><a href="#">Mentions légales</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__widget">
+                        <a href="#">
+                            <img src="https://www.iut.parisdescartes.fr/wp-content/uploads/sites/3/2019/07/logo-universite-paris-300x88-300x88.png"
+                                alt="Logo IUT de Paris">
+                        </a>
+                    </div>
+                </div>
+            </footer>
 
+        </div>
+    </div>
 </body>
-
 </html>

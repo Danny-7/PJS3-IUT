@@ -1,0 +1,89 @@
+:root {
+    --red: #cf0a2c;
+    --grey: #666;
+    --yellow: #eaa903;
+}
+
+.presentation {
+    background-image: url("../assets/fd-opaque.png");
+    background-color: var(--yellow);
+}
+
+.left-item {
+    flex: 0.5;
+    padding: 2% 8%;
+}
+
+.txt-upper>h1 {
+    font-size: 60px;
+    line-height: 1.3em;
+    color: #f7f7f7;
+}
+
+.left-item p {
+    font-size: 20px;
+}
+
+.right-item {
+    flex: 0.5;
+    background-image: url("../assets/iut_accueil.jpg");
+}
+
+/* section for the animations */
+.fade-in-one {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+.fade-appear {
+    opacity: 0;
+    transition: all 700ms ease-in;
+}
+
+.fade-appear.show-fade {
+    opacity: 1;
+}
+
+.fade-in-one.show-fade {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* properties changed if the width is less than 1000px*/
+@media (max-width: 1000px) {
+
+    .presentation {
+        background: #fff;
+    }
+
+    .left-item {
+        flex: 1; /*take the all width*/
+    }
+
+    .left-item h1 {
+        font-weight: 900;
+        font-size: 30px;
+        color: #555555;
+    }
+
+    .left-item p {
+        font-size: 14px;
+        color: #666666;
+    }
+
+    .right-item {
+        display: none;
+    }
+
+    .btn__section {
+        color: var(--red);
+        border-color: var(--red);
+        border-radius: 3px;
+    }
+
+    .btn__section:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        border-color: transparent;
+    }
+}

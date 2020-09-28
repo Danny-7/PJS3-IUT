@@ -1,0 +1,97 @@
+:root {
+    --red: #cf0a2c;
+    --grey: #666;
+    --yellow: #eaa903;
+}
+
+.degrees {
+    background-color: #eaa903;
+    padding: 60px 2em;
+}
+
+.degrees>h1 {
+    color: white;
+    padding: 27px;
+    font-size: 36px;
+}
+
+.degrees>.grid {
+    color: white;
+    text-align: center;
+    width: 80%;
+    padding: 25px 0;
+    margin: 0 auto;
+    grid-gap: 3em; /*space between the child elements*/
+    align-content: center; /*elements aligned to center*/
+}
+
+.grid>div {
+    width: 90%;
+}
+
+.degree i {
+    font-size: 70px;
+    padding: 20px;
+}
+
+.degree h4 {
+    font-size: 22px;
+}
+
+.degree p {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 2em;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 750ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*when the width is less than 1000px*/
+@media (max-width : 1000px) {
+    .degrees .grid {
+        /*the grid has now 2 columns before there was 5 columns*/
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .degrees {
+        background-color: unset;
+    }
+
+    .degrees :not(i) {
+        color: var(--grey);
+    }
+
+    .degree {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .degree i {
+        color: var(--red);
+    }
+
+    .degree h1 {
+        font-size: 18px;
+    }
+
+    .degree p {
+        font-size: 14px;
+    }
+}
+
+/*when the width is less than 500px*/
+@media (max-width : 500px) {
+    .degrees .grid {
+        /*the grid has now 1 columns before there was 2 columns*/
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
