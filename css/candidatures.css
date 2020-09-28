@@ -36,6 +36,7 @@
     margin: 1.5em auto;
 }
 
+/* section for the animations */
 .fade-in {
     opacity: 0;
     transform: scale(0);

@@ -29,6 +29,7 @@
     background-image: url("../assets/iut_accueil.jpg");
 }
 
+/* section for the animations */
 .fade-in-one {
     transform: translateY(-50px);
     opacity: 0;
@@ -49,6 +50,7 @@
     opacity: 1;
 }
 
+/* properties changed if the width is less than 1000px*/
 @media (max-width: 1000px) {
 
     .presentation {
@@ -56,7 +58,7 @@
     }
 
     .left-item {
-        flex: 1;
+        flex: 1; /*take the all width*/
     }
 
     .left-item h1 {

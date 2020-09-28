@@ -1,9 +1,17 @@
+<!--
+    Author: Daniel Aguiar, Mehdi Hachisman, Raphaël Gonçalves Catarino,
+            Vincent Nguyen, Enzo Peudepièce
+    Year: 2020
+    Subject: PJS3 Project
+-->
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--style sheets-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/iut.css" />
@@ -14,6 +22,7 @@
     <link rel="stylesheet" href="./css/numbers.css">
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <!--javascript scripts-->
     <script async src="./js/header.js"></script>
     <script async src="./js/counter.js" type="module"></script>
     <script async src="./js/animations.js"></script>
@@ -21,8 +30,11 @@
 </head>
 
 <body>
+    <!--main page-->
     <div class="container">
+        <!--header-->
         <div class="header container">
+            <!--top header-->
             <div class="top__header container">
                 <div class="top__header__menu flex jcc">
                     <ul class="social__icons flex">
@@ -41,6 +53,7 @@
                     </ul>
                 </div>
             </div>
+            <!--navigation bar-->
             <header class="main__header container">
                 <nav class="navbar container flex jc-sac">
                     <div class="logo__container">
@@ -48,7 +61,7 @@
                             <img src="./assets/logo_iut-paris-descartes.png" alt="IUT de Paris" class="logo" />
                         </a>
                     </div>
-                    <!---Box pour les liens de la barre de navigation-->
+                    <!---unorder list for navigation bar links-->
                     <ul class="navigation flex jc-sbc pt-3">
                         <li class="navbar__item navbar__item__children pb-3">
                             <a href="#">L'institut <span><i class="fas fa-angle-down"></i></span></a>
@@ -163,6 +176,7 @@
                             <a href="#" class="btn btn__nav">Covid-19</a>
                         </li>
                     </ul>
+                    <!--mobile navigation bar-->
                     <ul class="mobile__navigation flex jc-sbc">
                         <li class="navbar__item navbar__item__children pb-3">
                             <a href="#">L'institut <span><i class="fas fa-angle-down"></i></span></a>
@@ -283,7 +297,7 @@
                             <a href="#">Personnels</a>
                         </li>
                     </ul>
-                    <!--add function for hide the navbar and display the input field-->
+                    <!--search bar feature-->
                     <div class="searchBar">
                         <input type="text" value="Rechercher ...">
                     </div>
@@ -297,7 +311,7 @@
             </header>
         </div>
         <div class="main__content">
-            <!--First section -->
+            <!--Jumbotron section -->
             <section class="container">
                 <div class="presentation background flex fade-appear">
                     <div class="left-item">
@@ -347,7 +361,7 @@
                     </div>
                 </div>
             </section>
-            <!--container for degrees-->
+            <!--Degrees section-->
             <section class="container degrees">
                 <h1 class="txt-center fade-in">Diplômes</h1>
                 <div class="grid">
@@ -496,7 +510,5 @@
 
         </div>
     </div>
-
 </body>
-
 </html>

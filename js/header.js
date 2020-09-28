@@ -10,11 +10,12 @@ const searchBar = document.querySelector('.searchBar');
 const positionTop = header.offsetHeight;
 let count = 0;
 
+// set the position of the navigation bar
 if (positionTop !== 0) {
-    // navigationBar.setAttribute('style', `top: ${positionTop}px`);
     mobileBar.setAttribute('style', `top: ${positionTop}px`);
 }
 
+// function when we want stretch the navigation bar 
 const stretchNavbar = () => {
     subMenus.forEach(menu => menu.setAttribute('style', 'margin-top: 1em'));
     navigationBar.classList.add('pt-1');
@@ -23,6 +24,7 @@ const stretchNavbar = () => {
     navItems.forEach(item => item.classList.add('pb-1'));
 };
 
+//reset the properties to default if the page y offset is at 0
 const resetNavbar = () => {
     header.setAttribute('style', 'height: 120px');
     subMenus.forEach(menu => menu.setAttribute('style', 'margin-top: 3em'));
@@ -31,6 +33,7 @@ const resetNavbar = () => {
     navItems.forEach(item => item.classList.remove('pb-1'));
 }
 
+// function on scroll 
 const scrollFunction = () => {
     if (window.innerWidth > 1300) {
         if (window.pageYOffset > 0) {
@@ -40,6 +43,7 @@ const scrollFunction = () => {
     }
 }
 
+// function for put the position of the mobile navigation bar 
 const stretchFunction = () => {
     if (window.innerWidth <= 1300 && count === 0) {
         mobileBar.setAttribute('style', `top: ${header.offsetHeight}px`);

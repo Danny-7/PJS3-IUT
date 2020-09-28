@@ -3,6 +3,7 @@ const counters = document.querySelector('.counters');
 const countersNum = document.querySelectorAll('.count');
 const countersDiv = document.querySelectorAll('.count__card');
 
+// importing countUP module 
 import {
     CountUp
 } from './countUp.js'

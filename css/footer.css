@@ -45,7 +45,8 @@ footer {
     .footer__widget {
         width: 100%;
     }
-
+    
+    /*all widgets but not the last child */
     .footer__widget:not(:last-child) {
         margin: 0;
         margin-bottom: 9.5%;
